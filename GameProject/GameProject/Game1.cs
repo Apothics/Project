@@ -84,7 +84,7 @@ namespace GameProject
             // load audio content
 
             // load sprite font
-
+            
             // load projectile and explosion sprites
 
             // add initial game objects
@@ -92,7 +92,7 @@ namespace GameProject
             // set initial health and score strings
 
             // add burger
-            burger = new Burger(Content, "burger", GameConstants.WindowWidth / 2, GameConstants.WindowHeight / (1/8), null);
+            burger = new Burger(Content, "burger", GameConstants.WindowWidth / 2, (int)(((double)GameConstants.WindowHeight) * (7.0f / 8)), null);
 
             //spawn bear
             SpawnBear();
