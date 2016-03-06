@@ -221,9 +221,9 @@ namespace GameProject
             float randomVelocity = RandomNumberGenerator.NextFloat(GameConstants.BearSpeedRange) + GameConstants.MinBearSpeed;
 
             // Step 2.4 generate random angle
-            float randomAngle = RandomNumberGenerator.NextFloat((float)Math.PI * 180);
+            float randomAngle = RandomNumberGenerator.NextFloat((float)Math.PI / 180);
 
-            new Vector2 bearVector = Vector2();
+            Vector2 bearVector = new Vector2((float)Math.Sin(randomAngle));
 
             // create new bear
 
