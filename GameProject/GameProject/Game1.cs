@@ -214,8 +214,16 @@ namespace GameProject
         private void SpawnBear()
         {
             // generate random location
+            float randomX = GetRandomLocation(GameConstants.SpawnBorderSize, GameConstants.WindowWidth - GameConstants.SpawnBorderSize);
+            float randomY = GetRandomLocation(GameConstants.SpawnBorderSize, GameConstants.WindowHeight - GameConstants.SpawnBorderSize);
 
             // generate random velocity
+            float randomVelocity = RandomNumberGenerator.NextFloat(GameConstants.BearSpeedRange) + GameConstants.MinBearSpeed;
+
+            // Step 2.4 generate random angle
+            float randomAngle = RandomNumberGenerator.NextFloat((float)Math.PI * 180);
+
+            new Vector2 bearVector = Vector2();
 
             // create new bear
 
