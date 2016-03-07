@@ -223,7 +223,7 @@ namespace GameProject
             // Step 2.4 generate random angle
             float randomAngle = RandomNumberGenerator.NextFloat((float)Math.PI * 180);
 
-            Vector2 bearVector = new Vector2((float)Math.Sin(randomAngle));
+            Vector2 bearVector = new Vector2((float)Math.Cos(randomAngle), (float)Math.Sin(randomAngle));
 
             // create new bear
 
