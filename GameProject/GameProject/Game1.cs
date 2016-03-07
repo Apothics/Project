@@ -18,6 +18,7 @@ namespace GameProject
 
         // game objects. Using inheritance would make this
         // easier, but inheritance isn't a GDD 1200 topic
+
         Burger burger;
         List<TeddyBear> bears = new List<TeddyBear>();
         static List<Projectile> projectiles = new List<Projectile>();
